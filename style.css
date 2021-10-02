@@ -278,19 +278,24 @@ p {
             display: flex;
             flex-direction: column;
         }
-
-        #box3 {
-            padding: 10px;
+	
+	.left-column {
             flex-grow: 1;
             display: flex;
-            flex-direction: row;
-            border: solid 1px green
+            flex-direction: column;
+  
         }
   
-        #box4 {
-            flex-grow: 2;
-            border: solid 1px orange
+        .left-column div {
+            flex-grow: 1;
+            margin: 0 8px;
+            border: solid 1px red;
         }
+  
+        .left-column div+div {
+            margin-top: 8px
+        }
+
   
         .middle-column {
             flex-grow: 1;
@@ -308,11 +313,24 @@ p {
         .middle-column div+div {
             margin-top: 8px
         }
-  
-        #box8 {
+
+	 {
             flex-grow: 1;
-            border: solid 1px black
+            display: flex;
+            flex-direction: column;
+  
         }
+  
+        .right-column div {
+            flex-grow: 1;
+            margin: 0 8px;
+            border: solid 1px red;
+        }
+  
+        .right-column div+div {
+            margin-top: 8px
+        }
+
 /* LAUGHING SKULL  */
 
 body,
