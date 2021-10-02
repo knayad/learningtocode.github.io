@@ -245,3 +245,21 @@ p {
     transform: translateY(20px);
   }
 }
+
+
+/* cool bg */
+
+.large-header {
+	position: relative;
+	width: 100%;
+  min-height: 1000px;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.demo-1 .large-header {
+	background-image: url('http://www.eso.org/public/archives/images/screen/eso1205a.jpg');
+}
