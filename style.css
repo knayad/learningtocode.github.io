@@ -313,3 +313,34 @@ p {
             flex-grow: 1;
             border: solid 1px black
         }
+/* LAUGHING SKULL  */
+
+body,
+#container {
+  width: 100%;
+  height: 100%;
+  background: #1d1e1a;
+}
+
+#skull {
+  display:block;
+  width: 400px;
+  height: 545px;
+  margin: auto;
+}
+
+polygon {
+  stroke: #dbdad7;
+  stroke-width: 1px;
+}
+
+#skull:hover #jaw {
+  transform-origin: top center;
+  animation: jabber .35s ease infinite;
+}
+
+@keyframes jabber { 
+  0%, 50%, 100% { transform: rotateZ(0deg) translateY(0px); }
+  33% { top: 1px; transform: rotateZ(-.5deg) translateY(10px); }
+  66% { top: 1px; transform: rotateZ(.5deg) translateY(8px); }
+}
