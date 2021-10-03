@@ -266,6 +266,7 @@ p {
 /* boxes for dayyyyyyyyys */
         body,
         html {
+	    scroll-behavior: smooth;
             height: 100%;
             width: 100%;
             overflow: hidden;
