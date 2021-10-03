@@ -28,7 +28,7 @@ $('.main_h li a').click(function() {
 $('nav a').click(function(event) {
     var id = $(this).attr("href");
     var offset = 70;
-    var target = $(id).offset().top - offset;
+    let target = $(id).offset().top - offset;
     $('html, body').animate({
         scrollTop: target
     }, 500);
@@ -41,7 +41,7 @@ $('nav a').click(function(event) {
 
 (function() {
 
-    var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+    let width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
     // Main
     initHeader();
@@ -56,7 +56,7 @@ $('nav a').click(function(event) {
         largeHeader = document.getElementById('large-header');
         largeHeader.style.height = height+'px';
 
-        canvas = document.getElementById('demo-canvas');
+        canvas = document.getElementById('large-header');
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext('2d');
