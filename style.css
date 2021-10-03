@@ -133,6 +133,7 @@ nav ul a {
 }
 
 body {
+  position: relative;
   color: #8f8f8f;
   background: white;
   font-family: "Cardo", serif;
