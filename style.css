@@ -253,7 +253,8 @@ p {
 .large-header {
 	position: relative;
 	width: 100%;
-  min-height: 1000px;
+	height: 100%
+		min-height: 1000px;
 	background-image: url('http://www.eso.org/public/archives/images/screen/eso1205a.jpg');
 	background: #333;
 	overflow: hidden;
